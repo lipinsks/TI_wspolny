@@ -20,7 +20,11 @@ int main(int argc, char* argv[]) {
         number1 = atoi(argv[1]);
         number2 = atoi(argv[3]);
 
-        if (!strcmp("mul", argv[2])) {
+        if (!strcmp("add", argv[2])) {
+            result = number1 + number2;
+            printf("%d + %d = %d\n", number1, number2, result);
+            return 0;
+        } else if (!strcmp("mul", argv[2])) {
             result = number1 * number2;
             printf("%d * %d = %d\n", number1, number2, result);
             return 0;
